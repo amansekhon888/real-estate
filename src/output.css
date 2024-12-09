@@ -582,6 +582,10 @@ video {
   right: 0px;
 }
 
+.right-\[-2vw\] {
+  right: -2vw;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -590,16 +594,8 @@ video {
   top: -1.4vw;
 }
 
-.top-\[7vw\] {
-  top: 7vw;
-}
-
 .top-\[8vw\] {
   top: 8vw;
-}
-
-.right-\[-2vw\] {
-  right: -2vw;
 }
 
 .z-\[-1\] {
