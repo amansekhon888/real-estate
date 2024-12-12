@@ -4,5 +4,5 @@
 
 :root {
     --primary: #4A779E;
-    --custom-drop-shadow: -4px 4px 3px rgba(0, 0, 0, 0.70);
+    --custom-drop-shadow: -0.3vw 0.3vw 0.2vw rgba(0, 0, 0, 0.70)
 }

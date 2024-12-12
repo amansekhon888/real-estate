@@ -566,10 +566,6 @@ video {
   bottom: 0px;
 }
 
-.bottom-\[-10vw\] {
-  bottom: -10vw;
-}
-
 .left-0 {
   left: 0px;
 }
@@ -582,10 +578,6 @@ video {
   right: 0px;
 }
 
-.right-\[-2vw\] {
-  right: -2vw;
-}
-
 .top-0 {
   top: 0px;
 }
@@ -594,8 +586,12 @@ video {
   top: -1.4vw;
 }
 
-.top-\[8vw\] {
-  top: 8vw;
+.top-\[14vw\] {
+  top: 14vw;
+}
+
+.top-\[16vw\] {
+  top: 16vw;
 }
 
 .z-\[-1\] {
@@ -614,6 +610,16 @@ video {
   margin: auto;
 }
 
+.mx-\[3vw\] {
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+
+.my-\[1vw\] {
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
 .mt-\[0\.2vw\] {
   margin-top: 0.2vw;
 }
@@ -622,28 +628,44 @@ video {
   margin-top: 1vw;
 }
 
-.mt-\[2\.2vw\] {
-  margin-top: 2.2vw;
+.mt-\[2vw\] {
+  margin-top: 2vw;
+}
+
+.mt-\[4vw\] {
+  margin-top: 4vw;
 }
 
 .flex {
   display: flex;
 }
 
-.h-full {
-  height: 100%;
+.h-\[180vw\] {
+  height: 180vw;
+}
+
+.h-\[85vh\] {
+  height: 85vh;
 }
 
 .w-10\/12 {
   width: 83.333333%;
 }
 
+.w-11\/12 {
+  width: 91.666667%;
+}
+
 .w-2\/5 {
   width: 40%;
 }
 
-.w-3\/5 {
-  width: 60%;
+.w-\[32vw\] {
+  width: 32vw;
+}
+
+.w-\[46\%\] {
+  width: 46%;
 }
 
 .w-\[8vw\] {
@@ -667,6 +689,10 @@ video {
   flex-direction: column;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
@@ -675,43 +701,92 @@ video {
   justify-content: space-between;
 }
 
-.gap-4 {
-  gap: 1rem;
+.gap-\[1\.6vw\] {
+  gap: 1.6vw;
+}
+
+.gap-\[2vw\] {
+  gap: 2vw;
+}
+
+.gap-\[6vw\] {
+  gap: 6vw;
+}
+
+.justify-self-end {
+  justify-self: end;
 }
 
 .overflow-hidden {
   overflow: hidden;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
+.rounded-\[0\.6vw\] {
+  border-radius: 0.6vw;
 }
 
-.border {
-  border-width: 1px;
+.rounded-\[1\.2vw\] {
+  border-radius: 1.2vw;
+}
+
+.rounded-\[20px\] {
+  border-radius: 20px;
 }
 
 .bg-primary {
   background-color: var(--primary);
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, #C7E5FF, #EBF4FF);
 }
 
-.px-\[1\.2vw\] {
-  padding-left: 1.2vw;
-  padding-right: 1.2vw;
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+.px-\[3vw\] {
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
 
-.py-\[0\.6vw\] {
-  padding-top: 0.6vw;
-  padding-bottom: 0.6vw;
+.px-\[4vw\] {
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+.py-\[1\.6vw\] {
+  padding-top: 1.6vw;
+  padding-bottom: 1.6vw;
+}
+
+.py-\[1vw\] {
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+
+.py-\[2\.6vw\] {
+  padding-top: 2.6vw;
+  padding-bottom: 2.6vw;
+}
+
+.py-\[2vw\] {
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
 }
 
 .font-sans {
@@ -722,16 +797,20 @@ video {
   font-size: 0.8vw;
 }
 
-.text-\[1\.2vw\] {
-  font-size: 1.2vw;
+.text-\[10vw\] {
+  font-size: 10vw;
 }
 
-.text-\[1vw\] {
-  font-size: 1vw;
+.text-\[3vw\] {
+  font-size: 3vw;
 }
 
-.text-\[7vw\] {
-  font-size: 7vw;
+.text-\[4vw\] {
+  font-size: 4vw;
+}
+
+.text-\[6vw\] {
+  font-size: 6vw;
 }
 
 .font-semibold {
@@ -758,5 +837,94 @@ video {
 
 :root {
   --primary: #4A779E;
-  --custom-drop-shadow: -4px 4px 3px rgba(0, 0, 0, 0.70);
+  --custom-drop-shadow: -0.3vw 0.3vw 0.2vw rgba(0, 0, 0, 0.70)
+
+}
+
+@media not all and (min-width: 640px) {
+  .max-tablet\:hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 640px) {
+  .tablet\:bottom-\[-10vw\] {
+    bottom: -10vw;
+  }
+
+  .tablet\:right-\[-2vw\] {
+    right: -2vw;
+  }
+
+  .tablet\:top-\[10vw\] {
+    top: 10vw;
+  }
+
+  .tablet\:mt-\[2\.2vw\] {
+    margin-top: 2.2vw;
+  }
+
+  .tablet\:hidden {
+    display: none;
+  }
+
+  .tablet\:h-\[50vw\] {
+    height: 50vw;
+  }
+
+  .tablet\:h-full {
+    height: 100%;
+  }
+
+  .tablet\:max-h-\[100vh\] {
+    max-height: 100vh;
+  }
+
+  .tablet\:w-10\/12 {
+    width: 83.333333%;
+  }
+
+  .tablet\:w-2\/5 {
+    width: 40%;
+  }
+
+  .tablet\:w-3\/5 {
+    width: 60%;
+  }
+
+  .tablet\:items-start {
+    align-items: flex-start;
+  }
+
+  .tablet\:px-\[1\.2vw\] {
+    padding-left: 1.2vw;
+    padding-right: 1.2vw;
+  }
+
+  .tablet\:py-\[0\.6vw\] {
+    padding-top: 0.6vw;
+    padding-bottom: 0.6vw;
+  }
+
+  .tablet\:text-start {
+    text-align: start;
+  }
+
+  .tablet\:text-\[1\.2vw\] {
+    font-size: 1.2vw;
+  }
+
+  .tablet\:text-\[1vw\] {
+    font-size: 1vw;
+  }
+
+  .tablet\:text-\[7vw\] {
+    font-size: 7vw;
+  }
+}
+
+@media (min-width: 1330px) {
+  .laptop-xl\:w-\[55\%\] {
+    width: 55%;
+  }
 }

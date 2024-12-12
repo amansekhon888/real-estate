@@ -15,6 +15,18 @@ module.exports = {
       dropShadow: {
         'custom': "var(--custom-drop-shadow)", // Example custom drop shadow
       },
+      screens: {
+        // => @media (min-width: 1280px) { ... }
+        'mobile': '320px',
+        'mobile-lg': '425px',
+        'tablet': '640px',
+        'tablet-lg': '840px',
+        'laptop': '1024px',
+        'laptop-lg': '1248px',
+        'laptop-xl': '1330px',
+        'desktop': '1440px',
+        'desktop-lg': '2000px',
+      },
     },
   },
   plugins: [],
