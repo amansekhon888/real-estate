@@ -4,5 +4,16 @@
 
 :root {
     --primary: #4A779E;
-    --custom-drop-shadow: -0.3vw 0.3vw 0.2vw rgba(0, 0, 0, 0.70)
+    --primary-accent: #EAF3FF;
+    --custom-drop-shadow: -0.3vw 0.3vw 0.2vw rgba(0, 0, 0, 0.70);
+    --heading-size: 3.2vw;
+    --subheading-size: 1.8vw;
+    --paragraph-size: 3vw
+}
+
+/* Breakpoints should be same as in tailwind.config.ts */
+@media (min-width: 640px) {
+    :root {
+        --paragraph-size: 1vw
+    }
 }

@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "var(--primary)", // Use the CSS variable here
+        primary: "var(--primary)", 
+        primaryAccent: "var(--primary-accent)"
       },
       fontFamily: {
         sans: ['"InterVariable"', 'system-ui', 'sans-serif'],
@@ -26,6 +27,11 @@ module.exports = {
         'laptop-xl': '1330px',
         'desktop': '1440px',
         'desktop-lg': '2000px',
+      },
+      fontSize: {
+        para: 'var(--paragraph-size)', 
+        heading: 'var(--heading-size)',
+        subheading: 'var(--subheading-size)'
       },
     },
   },

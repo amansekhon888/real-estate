@@ -566,12 +566,20 @@ video {
   bottom: 0px;
 }
 
+.bottom-\[4vw\] {
+  bottom: 4vw;
+}
+
 .left-0 {
   left: 0px;
 }
 
 .left-1\/2 {
   left: 50%;
+}
+
+.left-\[28vw\] {
+  left: 28vw;
 }
 
 .right-0 {
@@ -606,6 +614,62 @@ video {
   z-index: -3;
 }
 
+.col-start-2 {
+  grid-column-start: 2;
+}
+
+.col-start-3 {
+  grid-column-start: 3;
+}
+
+.col-end-5 {
+  grid-column-end: 5;
+}
+
+.row-span-3 {
+  grid-row: span 3 / span 3;
+}
+
+.row-start-1 {
+  grid-row-start: 1;
+}
+
+.row-start-2 {
+  grid-row-start: 2;
+}
+
+.row-start-3 {
+  grid-row-start: 3;
+}
+
+.row-start-4 {
+  grid-row-start: 4;
+}
+
+.row-start-5 {
+  grid-row-start: 5;
+}
+
+.row-start-6 {
+  grid-row-start: 6;
+}
+
+.row-end-3 {
+  grid-row-end: 3;
+}
+
+.row-end-5 {
+  grid-row-end: 5;
+}
+
+.row-end-6 {
+  grid-row-end: 6;
+}
+
+.row-end-8 {
+  grid-row-end: 8;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -624,6 +688,14 @@ video {
   margin-top: 0.2vw;
 }
 
+.mt-\[0\.6vw\] {
+  margin-top: 0.6vw;
+}
+
+.mt-\[1\.6vw\] {
+  margin-top: 1.6vw;
+}
+
 .mt-\[1vw\] {
   margin-top: 1vw;
 }
@@ -640,12 +712,28 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .h-\[180vw\] {
   height: 180vw;
 }
 
-.h-\[85vh\] {
-  height: 85vh;
+.h-\[80vh\] {
+  height: 80vh;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.max-h-\[85vh\] {
+  max-height: 85vh;
+}
+
+.max-h-\[90vh\] {
+  max-height: 90vh;
 }
 
 .w-10\/12 {
@@ -676,6 +764,14 @@ video {
   width: 100%;
 }
 
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -683,6 +779,14 @@ video {
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-rows-7 {
+  grid-template-rows: repeat(7, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -701,6 +805,10 @@ video {
   justify-content: space-between;
 }
 
+.gap-\[1\.2vw\] {
+  gap: 1.2vw;
+}
+
 .gap-\[1\.6vw\] {
   gap: 1.6vw;
 }
@@ -711,6 +819,10 @@ video {
 
 .gap-\[6vw\] {
   gap: 6vw;
+}
+
+.self-end {
+  align-self: flex-end;
 }
 
 .justify-self-end {
@@ -729,12 +841,16 @@ video {
   border-radius: 1.2vw;
 }
 
-.rounded-\[20px\] {
-  border-radius: 20px;
+.rounded-\[1\.6vw\] {
+  border-radius: 1.6vw;
 }
 
 .bg-primary {
   background-color: var(--primary);
+}
+
+.bg-primaryAccent {
+  background-color: var(--primary-accent);
 }
 
 .bg-white {
@@ -751,6 +867,16 @@ video {
      object-fit: cover;
 }
 
+.object-bottom {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.px-\[1\.4vw\] {
+  padding-left: 1.4vw;
+  padding-right: 1.4vw;
+}
+
 .px-\[3vw\] {
   padding-left: 3vw;
   padding-right: 3vw;
@@ -759,6 +885,11 @@ video {
 .px-\[4vw\] {
   padding-left: 4vw;
   padding-right: 4vw;
+}
+
+.py-\[1\.4vw\] {
+  padding-top: 1.4vw;
+  padding-bottom: 1.4vw;
 }
 
 .py-\[1\.6vw\] {
@@ -785,6 +916,10 @@ video {
   text-align: center;
 }
 
+.text-start {
+  text-align: start;
+}
+
 .text-end {
   text-align: end;
 }
@@ -801,16 +936,20 @@ video {
   font-size: 10vw;
 }
 
-.text-\[3vw\] {
-  font-size: 3vw;
-}
-
-.text-\[4vw\] {
-  font-size: 4vw;
-}
-
 .text-\[6vw\] {
   font-size: 6vw;
+}
+
+.text-heading {
+  font-size: var(--heading-size);
+}
+
+.text-para {
+  font-size: var(--paragraph-size);
+}
+
+.text-subheading {
+  font-size: var(--subheading-size);
 }
 
 .font-semibold {
@@ -819,6 +958,10 @@ video {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.leading-tight {
+  line-height: 1.25;
 }
 
 .text-primary {
@@ -837,8 +980,21 @@ video {
 
 :root {
   --primary: #4A779E;
-  --custom-drop-shadow: -0.3vw 0.3vw 0.2vw rgba(0, 0, 0, 0.70)
+  --primary-accent: #EAF3FF;
+  --custom-drop-shadow: -0.3vw 0.3vw 0.2vw rgba(0, 0, 0, 0.70);
+  --heading-size: 3.2vw;
+  --subheading-size: 1.8vw;
+  --paragraph-size: 3vw
 
+}
+
+/* Breakpoints should be same as in tailwind.config.ts */
+
+@media (min-width: 640px) {
+  :root {
+    --paragraph-size: 1vw
+    
+  }
 }
 
 @media not all and (min-width: 640px) {
@@ -908,14 +1064,6 @@ video {
 
   .tablet\:text-start {
     text-align: start;
-  }
-
-  .tablet\:text-\[1\.2vw\] {
-    font-size: 1.2vw;
-  }
-
-  .tablet\:text-\[1vw\] {
-    font-size: 1vw;
   }
 
   .tablet\:text-\[7vw\] {

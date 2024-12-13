@@ -4,7 +4,7 @@ import Sidebar from '../components/Common/Sidebar'
 
 const Layout = () => {
   return (
-    <div className='font-sans'>
+    <div className='font-sans text-para'>
         <Navbar />
         <Sidebar />
         <Outlet />
