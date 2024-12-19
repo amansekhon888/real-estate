@@ -1,0 +1,19 @@
+.mui-form--select .css-w76bbz-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+    font-size: var(--paragraph-size);
+    padding: 0.4vw 0.6vw;
+    background-color: white;
+}
+.mui-form--select input {
+    top: 0
+}
+.mui-form--select svg {
+    height: var(--paragraph-size);
+    width: var(--paragraph-size);
+    right: 0.4vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.mui-form--select .css-1ll44ll-MuiOutlinedInput-notchedOutline {
+    border: none;
+    outline: none;
+}

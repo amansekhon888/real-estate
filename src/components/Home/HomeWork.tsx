@@ -1,4 +1,4 @@
-import { living_room2 } from "../../assets/images"
+import { living_room3 } from "../../assets/images"
 import Button from "../Common/Button"
 import Heading from "../Common/Heading"
 
@@ -12,7 +12,7 @@ const HomeWork = () => {
             </div>
             <div className="flex-1">
                 {/* Crousal for Work Images */}
-                <img className="h-[80vh] w-full object-cover rounded-[1.6vw]" src={living_room2} />
+                <img className="h-[80vh] w-full object-cover rounded-[1.6vw]" src={living_room3} />
             </div>
         </div>
     )

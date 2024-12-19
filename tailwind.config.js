@@ -5,7 +5,9 @@ module.exports = {
     extend: {
       colors: {
         primary: "var(--primary)", 
-        primaryAccent: "var(--primary-accent)"
+        primaryAccent: "var(--primary-accent)",
+        secondaryBackground: "var(--secondary-background)",
+        gray41: "var(--gray-shade-41)"
       },
       fontFamily: {
         sans: ['"InterVariable"', 'system-ui', 'sans-serif'],
@@ -30,6 +32,7 @@ module.exports = {
       },
       fontSize: {
         para: 'var(--paragraph-size)', 
+        parasm: 'var(--sm-paragraph-size)',
         heading: 'var(--heading-size)',
         subheading: 'var(--subheading-size)'
       },
