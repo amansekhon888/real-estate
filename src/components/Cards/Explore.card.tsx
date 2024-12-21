@@ -1,4 +1,3 @@
-import { bedroom2 } from '../../assets/images'
 
 const ExploreCard = ({property}: {property: any}) => {
   return (

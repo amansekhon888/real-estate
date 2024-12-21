@@ -1,9 +1,10 @@
 import Heading from "../Common/Heading"
 import MenuItem from '@mui/material/MenuItem';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
+import Select from '@mui/material/Select';
 import { useState } from "react";
 import ExploreCard from "../Cards/Explore.card";
-import { bedroom2, living_room3, living_room5, living_room7 } from "../../assets/images";
+import { dining_area4, living_room3, living_room5, living_room7 } from "../../assets/images";
+import Button from "../Common/Button";
 
 const HomeExplore = () => {
   const [category, setCategory] = useState('Interior Design');
@@ -147,11 +148,54 @@ const HomeExplore = () => {
       },
       postedDate: "2024-12-10",
     },
+    {
+      id: "P12349",
+      title: "Modern Urban Studio",
+      description: "A compact and stylish studio apartment in the city center, perfect for young professionals or students.",
+      location: {
+        address: "23 Pearl Street, San Francisco, CA",
+        city: "San Francisco",
+        state: "California",
+        country: "USA",
+        zipCode: "94103",
+      },
+      price: "$450,000",
+      propertyType: "Studio Apartment",
+      features: [
+        "1 Bedroom",
+        "1 Bathroom",
+        "Open Floor Plan",
+        "High Ceilings",
+        "Natural Lighting",
+      ],
+      area: {
+        builtUp: "800 sq.ft",
+      },
+      images: [dining_area4],
+      status: "Available",
+      agent: {
+        name: "Rachel Green",
+        contact: "+1 123-789-6540",
+        email: "rachelgreen@example.com",
+      },
+      amenities: [
+        "Rooftop Lounge",
+        "24/7 Security",
+        "Co-working Space",
+        "Pet Friendly",
+      ],
+      nearby: {
+        schools: "1 mile",
+        hospitals: "0.5 miles",
+        malls: "1.2 miles",
+        transport: "0.3 miles to nearest bus stop",
+      },
+      postedDate: "2024-12-15",
+    },
   ];
   
-
   return (
-    <div className="tablet:w-10/12 w-11/12 max-h-[85vh] m-auto">
+    <div className="tablet:w-10/12 w-11/12 max-h-[100vh] m-auto">
       <Heading text="Explore Our Services" custom_css="text-center" />
       <p className="text-center mt-[1.2vw]">Explore our range of specialized services designed to bring your vision to life, from groundbreaking concepts to the final touches.</p>
       <div className="mt-[2vw] p-[1.4vw] bg-secondaryBackground rounded-[1.6vw] flex justify-between">
@@ -202,11 +246,12 @@ const HomeExplore = () => {
           </div>
         </div>
       </div>
-      <div className="mt-[1.4vw] grid grid-cols-3 gap-[1.2vw]">
+      <div className="mt-[1.4vw] grid grid-cols-4 gap-[1.2vw]">
         {properties?.map((property, index) => (
-          <ExploreCard property={property} />
+          <ExploreCard key={index} property={property} />
         ))}
       </div>
+      <Button text="Explore More" custom_css="justify-self-center" />
     </div>
   )
 }

@@ -1,3 +1,5 @@
+import Footer from '../components/Common/Footer'
+import Contact from '../components/Contact/Contact'
 import Banner from '../components/Home/Banner'
 import Figures from '../components/Home/Figures'
 import HomeAbout from '../components/Home/HomeAbout'
@@ -9,12 +11,12 @@ const Home = () => {
     return (
         <div className='flex flex-col gap-[6vw]'>
             <Banner />
+            <HomeExplore />
             <HomeServices />
             <HomeAbout />
-            <HomeWork />
             <Figures />
-            <HomeExplore />
-            <p>HELLO</p>
+            <HomeWork />
+            <Contact />
         </div>
     )
 }
