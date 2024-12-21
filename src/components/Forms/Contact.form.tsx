@@ -1,12 +1,12 @@
 import Heading from "../Common/Heading"
-import { OutlinedInput, InputAdornment, FormControl, Select, MenuItem, Button } from '@mui/material';
+import { OutlinedInput, InputAdornment, FormControl, Select, MenuItem, Button, SelectChangeEvent } from '@mui/material';
 import { useState } from 'react';
 import { CallOutlined, ConstructionOutlined, EmailOutlined, MessageOutlined, Person2Outlined } from "@mui/icons-material";
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({ fullname: '', email: '', message: '', phone: '', service: 'Renovation' });
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement> | SelectChangeEvent) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
@@ -31,11 +31,13 @@ const ContactForm = () => {
                             onChange={handleChange}
                             placeholder="Full Name"
                             size="small"
+                            autoComplete="name"
                             startAdornment={
                                 <InputAdornment position="start">
                                     <Person2Outlined className="text-para" sx={{ fontSize: "var(--paragraph-size)", color: 'var(--primary)' }} />
                                 </InputAdornment>
                             }
+                            inputProps={{ 'aria-label': 'fullname' }}
                             sx={{
                                 backgroundColor: 'white',
                                 color: '#414141',
@@ -52,11 +54,13 @@ const ContactForm = () => {
                             onChange={handleChange}
                             placeholder="Email"
                             size="small"
+                            autoComplete="email"
                             startAdornment={
                                 <InputAdornment position="start">
                                     <EmailOutlined className="text-para" sx={{ fontSize: "var(--paragraph-size)", color: 'var(--primary)' }} />
                                 </InputAdornment>
                             }
+                            inputProps={{ 'aria-label': 'email' }}
                             sx={{
                                 backgroundColor: 'white',
                                 color: '#414141',
@@ -69,15 +73,24 @@ const ContactForm = () => {
                 <div className="flex gap-[0.6vw]">
                     <FormControl className="w-3/5">
                         <Select
-                            id="fullname"
-                            name="fullname"
+                            id="service"
+                            name="service"
                             value={formData.service}
+                            onChange={handleChange}
                             size="small"
                             startAdornment={
                                 <InputAdornment position="start">
                                     <ConstructionOutlined className="text-para" sx={{ fontSize: "var(--paragraph-size)", color: 'var(--primary)' }} />
                                 </InputAdornment>
                             }
+                            MenuProps={{
+                                PaperProps: {
+                                    style: {
+                                        maxHeight: 224,
+                                        width: 250,
+                                    },
+                                },
+                            }}
                             sx={{
                                 backgroundColor: 'white',
                                 color: '#414141',
@@ -87,7 +100,7 @@ const ContactForm = () => {
                         >
                             <MenuItem value="Interior Design">Interior Design</MenuItem>
                             <MenuItem value="Renovation">Renovation</MenuItem>
-                            <MenuItem value="Furniture Desig">Furniture Design</MenuItem>
+                            <MenuItem value="Furniture Design">Furniture Design</MenuItem>
                         </Select>
                     </FormControl>
                     <FormControl className="w-2/5">
@@ -98,11 +111,13 @@ const ContactForm = () => {
                             onChange={handleChange}
                             placeholder="Phone"
                             size="small"
+                            autoComplete="tel"
                             startAdornment={
                                 <InputAdornment position="start">
                                     <CallOutlined className="text-para" sx={{ fontSize: "var(--paragraph-size)", color: 'var(--primary)' }} />
                                 </InputAdornment>
                             }
+                            inputProps={{ 'aria-label': 'phone' }}
                             sx={{
                                 backgroundColor: 'white',
                                 color: '#414141',
@@ -114,38 +129,19 @@ const ContactForm = () => {
                 </div>
                 <FormControl fullWidth>
                     <OutlinedInput
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        placeholder="Email"
-                        size="small"
-                        startAdornment={
-                            <InputAdornment position="start">
-                                <EmailOutlined className="text-para" sx={{ fontSize: "var(--paragraph-size)", color: 'var(--primary)' }} />
-                            </InputAdornment>
-                        }
-                        sx={{
-                            backgroundColor: 'white',
-                            color: '#414141',
-                            fontSize: "var(--paragraph-size)",
-                            borderRadius: '0.6vw'
-                        }}
-                    />
-                </FormControl>
-                <FormControl fullWidth>
-                    <OutlinedInput
                         id="message"
                         name="message"
                         value={formData.message}
                         onChange={handleChange}
                         placeholder="Message"
                         size="small"
+                        autoComplete="off"
                         startAdornment={
                             <InputAdornment position="start">
                                 <MessageOutlined sx={{ fontSize: "var(--paragraph-size)", color: 'var(--primary)' }} />
                             </InputAdornment>
                         }
+                        inputProps={{ 'aria-label': 'message' }}
                         multiline
                         rows={2}
                         sx={{

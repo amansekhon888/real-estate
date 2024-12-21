@@ -1,4 +1,3 @@
-import Footer from '../components/Common/Footer'
 import Contact from '../components/Contact/Contact'
 import Banner from '../components/Home/Banner'
 import Figures from '../components/Home/Figures'
