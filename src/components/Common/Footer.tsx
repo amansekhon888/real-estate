@@ -3,7 +3,7 @@ import { logo } from "../../assets/images"
 
 const Footer = () => {
     return (
-        <div className='bg-gray41 w-full text-white'>
+        <div className='bg-primaryAccent w-full'>
             <div className="tablet:w-10/12 w-11/12 m-auto flex gap-[1.6vw] py-[3vw]">
                 <div className="w-[50%]">
                     <img className="w-[16vw]" src={logo} alt="Logo" />
@@ -30,7 +30,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <hr className="opacity-10"/>
+            <hr className="border-black opacity-40"/>
             <p className="text-center my-[0.4vw] text-parasm">&copy; Copyright 2024, <span className="text-primary font-bold">CONSTRUCTO</span> Construction Company</p>
         </div>
     )
